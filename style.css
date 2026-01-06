@@ -1,0 +1,68 @@
+#main-content {
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+}
+
+
+.hidden-panel {    
+    position: fixed;
+    top: 40%;
+    left: -250px;         
+    width: 250px;
+    background: rgb(255, 228, 105) 10px 100%;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+.hidden-panel:hover {
+    left: 0;
+}
+
+.hidden-panel .tab {
+    position: absolute;
+    top: 0;
+    right: -40px; 
+    width: 40px;
+    height: 100px;
+    background-color: rgb(255, 188, 3);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden-panel .content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.hidden-panel .content img {
+    width: 80px;  
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+.hidden-panel .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;  
+}
+
+.text .title {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.text a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 14px;
+}
